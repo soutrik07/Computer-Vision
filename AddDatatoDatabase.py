@@ -1,42 +1,42 @@
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
-
+URL = ""
 cred = credentials.Certificate("serviceAccountKey.json")
 firebase_admin.initialize_app(cred, {
-    'databaseURL': "https://faceattendancerealtimeproject-default-rtdb.firebaseio.com/"
+    'databaseURL': URL
 })
 
 ref = db.reference('Students')
 
 data = {
-    "2021CSB104":
+    "xxxxxxx":
         {
-            "name": "Soutrik Roy",
-            "department": "Computer Science and Technology",
+            "name": "A",
+            "department": "Computer Science and Engineering",
             "starting": 2021,
             "year": 2,
-            "total attendance": 40,
+            "total attendance": X,
             "last attendance": "2023-04-18 00:54:34",
             "standing": "good"
         },
-    "2021CSB071":
+    "yyyyyyyy":
         {
-            "name": "Prayas Mazumder",
-            "department": "Computer Science and Technology",
+            "name": "B",
+            "department": "Computer Science and Engineering",
             "starting": 2021,
             "year": 2,
-            "total attendance": 40,
+            "total attendance": Y,
             "last attendance": "2023-04-18 00:54:34",
             "standing": "good"
         },
-    "2021CSB111":
+    "zzzzzzzzz":
         {
-            "name": "Sumeet Soreng",
-            "department": "Computer Science and Technology",
+            "name": "C",
+            "department": "Computer Science and Engineering",
             "starting": 2021,
             "year": 2,
-            "total attendance": 40,
+            "total attendance": Z,
             "last attendance": "2023-04-18 00:54:34",
             "standing": "good"
         },
